@@ -8,31 +8,55 @@
     display: flex;
 }
 
-form{
+form {
     margin: auto;
     background-color: #F0FFFF;
     padding: 1rem;
+    min-width: 40vw;
 }
 
-form h2{
+form h2 {
     color: #315A76;
     text-transform: uppercase;
     text-align: center;
 }
-.form-row input{
+
+form .error{
+    font-size: 0.7rem;
+    color: red;
+    padding: 0.4rem;
+    display: none;
+}
+
+.form-row input {
     outline: none;
-    border:none;
+    border: none;
     border-bottom: 1px solid #ccc;
     padding: 0.5rem;
     margin: 0.2rem auto;
 }
 
-.form-row button{
-    border:none;
+.form-row button {
+    border: none;
     color: white;
     background-color: #315A76;
     height: 40px;
     cursor: pointer;
     margin: 0.5rem;
     width: 100%;
+}
+
+.form-row i {
+    top: 10px;
+    right: 10px;
+    color: gray;
+}
+
+.form-row .form-info {
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.form-row .form-info a {
+    color: #315A76;
 }

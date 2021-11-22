@@ -48,3 +48,10 @@ body{
 .ai-c{
     align-items: center;
 }
+
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
