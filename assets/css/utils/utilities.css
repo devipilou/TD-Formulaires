@@ -1,0 +1,50 @@
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-1{
+    flex: 1;
+}
+.flex-2{
+    flex: 2;
+}
+.flex-3{
+    flex: 3;
+}
+.flex-4{
+    flex: 4;
+}
+
+.gap-10{
+    gap: 10px;
+}
+.gap-15{
+    gap: 15px;
+}
+.gap-20{
+    gap: 20px;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.jc-c{
+    justify-content: center;
+}
+
+.ai-c{
+    align-items: center;
+}
