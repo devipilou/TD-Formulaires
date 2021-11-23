@@ -21,11 +21,11 @@ form h2 {
     text-align: center;
 }
 
-form .error{
+form .error {
     font-size: 0.7rem;
     color: red;
     padding: 0.4rem;
-    display: none;
+    /* display: none; */
 }
 
 .form-row input {
@@ -59,4 +59,9 @@ form .error{
 
 .form-row .form-info a {
     color: #315A76;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.2;
 }

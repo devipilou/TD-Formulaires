@@ -7,34 +7,42 @@
     <title>Formulaires inscription</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/assets/js/functions/listeners.js"></script>
+    <script defer src="/assets/js/app.js"></script>
 </head>
 <body>
     <div id="app">
-        <form action="">
+        <form action="" id="register">
             <h2>Inscription</h2>
             <div class="form-row flex gap-10">
                 <input type="text" class="flex-1" name="firstname" placeholder="Votre prénom ..." autocomplete="on">
                 <input type="text" class="flex-1" name="name" placeholder="Votre nom ..." autocomplete="on">
             </div>
-            <div class="error">
+            <div class="error" id="error-name">
                 <p>4 caractères au minimum, 20 au maximum</p>
             </div>
             <div class="form-row flex">
                 <input type="email" name="email" class="flex-1" placeholder="Votre email ...">
             </div>
-            <div class="error">
+            <div class="error" id="error-email">
                 <p>Vous devez saisir un email valide</p>
             </div>
             <div class="form-row flex relative">
                 <input type="password" name="password" class="flex-1" placeholder="Votre mot de passe ...">
-                <i class="fas fa-eye fa-eye-slash absolute"></i>
+                <i class="fas fa-eye fa-eye-slash absolute icon-pwd"></i>
+            </div>
+            <div class="error" id="error-password">
+                <p>Vous devez saisir un mot de passe</p>
             </div>
             <div class="form-row flex relative">
                 <input type="password" name="passwordconfirm" class="flex-1" placeholder="Confirmation ...">
-                <i class="fas fa-eye fa-eye-slash absolute"></i>
+                <i class="fas fa-eye fa-eye-slash absolute icon-pwd"></i>
+            </div>
+            <div class="error" id="error-confirm">
+                <p>Les 2 mots de passe doivent correspondre.</p>
             </div>
             <div class="form-row flex">
-                <button type="submit">S'inscrire</button>
+                <button type="submit" disabled>S'inscrire</button>
             </div>
             <div class="form-row">
                 <p class="form-info">Déja inscrit ? <a href="login.html">Cliquez ici</a>.</p>
