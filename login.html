@@ -7,6 +7,8 @@
     <title>Login</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/assets/js/functions/login.js"></script>
+    <script defer src="/assets/js/app.js"></script>
 </head>
 <body>
     <div id="app">
@@ -15,15 +17,18 @@
             <div class="form-row flex">
                 <input type="email" name="email" class="flex-1" placeholder="Votre email ...">
             </div>
-            <div class="error">
+            <div class="error" id="error-email">
                 <p>Vous devez saisir un email valide</p>
             </div>
             <div class="form-row flex relative">
                 <input type="password" name="password" class="flex-1" placeholder="Votre mot de passe ...">
-                <i class="fas fa-eye fa-eye-slash absolute"></i>
+                <i class="fas fa-eye fa-eye-slash absolute icon-pwd"></i>
+            </div>
+            <div class="error" id="error-password">
+                <p>Vous devez saisir un mot de passe</p>
             </div>
             <div class="form-row flex">
-                <button type="submit">Se connecter</button>
+                <button type="submit" disabled>Se connecter</button>
             </div>
             <div class="form-row">
                 <p class="form-info">Pas encore de compte ? <a href="index.html">Inscrivez-vous ici</a>.</p>
